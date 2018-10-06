@@ -5,7 +5,7 @@ VisualStudioVersion = 15.0.27703.2042
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MP.ForismaticQuotes.Test", "MP.ForismaticQuotes.Test\MP.ForismaticQuotes.Test.csproj", "{990BD343-1F05-41E6-A3C6-A0D381970171}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MP.Forismatic", "MP.Forismatic\MP.Forismatic.csproj", "{F075E4D4-ECB5-4DAC-B0A2-5821960DF540}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MP.ForismaticQuotes", "MP.ForismaticQuotes\MP.ForismaticQuotes.csproj", "{F075E4D4-ECB5-4DAC-B0A2-5821960DF540}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
