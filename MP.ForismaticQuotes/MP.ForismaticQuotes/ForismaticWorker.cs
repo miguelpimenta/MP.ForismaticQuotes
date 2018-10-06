@@ -8,6 +8,8 @@ namespace MP.ForismaticQuotes
 {
     public class ForismaticWorker : IDisposable
     {
+        private readonly string forismaticLink = "https://api.forismatic.com/api/1.0/?method=getQuote&format=json&lang=en";
+
         public async Task<string[]> GetQuoteAsync()
         {
             var output = new string[2];
@@ -16,7 +18,7 @@ namespace MP.ForismaticQuotes
                 using (var httpClient = new HttpClient())
                 {
                     QuoteModel quote;
-                    var str = await httpClient.GetStringAsync("https://api.forismatic.com/api/1.0/?method=getQuote&key=457653&format=json&lang=en").ConfigureAwait(false);
+                    var str = await httpClient.GetStringAsync(forismaticLink).ConfigureAwait(false);
                     quote = JsonConvert.DeserializeObject<QuoteModel>(str);
                     output[0] = quote.QuoteText;
                     output[1] = quote.QuoteAuthor;
